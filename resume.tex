@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Yash Garg
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{} % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+\newcommand{\resumeProject}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-3pt}
+}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Yash Garg} \\ \vspace{2pt}
+    Bengaluru, India \\ \vspace{2pt}
+    \small \href{tel:+918770868566}{\underline{+918770868566}} ~
+    \href{mailto:thisisyashgarg@gmail.com}{\underline{thisisyashgarg@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/thisisyashgarg/}{\underline{LinkedIn}} ~
+    \href{https://github.com/thisisyashgarg}{\underline{GitHub}} ~
+    \href{https://twitter.com/thisisyashgargg}{\underline{X}} ~
+    \href{https://thisisyashgarg.github.io/}{\underline{Website}}
+    \vspace{-2pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Maharaja Agrasen Institute of Technology}{2020-2024}
+      {Bachelor of Technology in Information Technology (8.9 CGPA)}{Delhi, India}
+      
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+       \resumeSubheading
+      {\href{https://zzazz.com/}{ZZAZZ}}{September 2025 - Present}
+      {Software Engineer}{Bengaluru, India}
+      \resumeItemListStart
+      \resumeItem{
+     Integrated \textbf{AMP-compatible pricing signal} across repos using AMP-script, SHA-256 hashing, DOM injections, amp-analytics for tracking, and multi-publisher templates (LiveMint, Hindustan Times).
+      }
+     \resumeItem{
+  Developed \textbf{Chrome extension} (Manifest V3) for Ground News/Bing News augmentation via NewsScraper with URL batch pricing and DOM badge injections.
+}
+\resumeItem{
+Contributed to \textbf{TTS-integrated content creation tool}; processed alignment JSON leveraging ElevenLabs for speech synthesis; implemented \textbf{O(1) time complexity word lookup} using a time-bucket algorithm for efficient timestamp-to-word mapping.
+}
+      \resumeItemListEnd
+       \resumeSubheading
+      {\href{https://youe.co/}{Youe}}{November 2024 - September 2025}
+      {Frontend Engineer}{Remote}
+      \resumeItemListStart
+      \resumeItem{
+      Revamped the React Native mobile app, architecting core user flows (onboarding, AI chat, roadmap, payments) that enabled Youe to \textbf{generate its first revenue} through in-app subscriptions.
+      }
+      \resumeItem{
+     Developed \textbf{full subscription system using RevenueCat}, implementing pricing displays, payment modals, discounted products, and subscription validation to support monetization.
+      }
+     \resumeItem{
+  Migrated the mobile app to a new API v3 backend, building a \textbf{TypeScript API client} with robust error handling and caching, \textbf{reducing app load times by ~50\%} and improving data reliability.
+}
+\resumeItem{
+Developed \textbf{scalable frontend architecture} using React Native, Next.js, and Zustand
